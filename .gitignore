@@ -1,0 +1,11 @@
+﻿################################################################################
+# この .gitignore ファイルは Microsoft(R) Visual Studio によって自動的に作成されました。
+################################################################################
+
+/.vs/SampleApplication/FileContentIndex
+/.vs/SampleApplication/v17
+/.vs
+/SimpleCalculator/SimpleCalculator.MaUI/.vs/SimpleCalculator.MaUI/FileContentIndex
+/SimpleCalculator/SimpleCalculator.MaUI/obj
+/SimpleCalculator/SimpleCalculator.MaUI/.vs/SimpleCalculator.MaUI/v17
+/SimpleCalculator/SimpleCalculator.MaUI/bin/Debug
