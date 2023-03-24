@@ -13,3 +13,5 @@
 /SimpleCalculator/SimpleCalculator.Wpf/obj
 /SimpleCalculator/SimpleCalculator.MaUI/.vs/ProjectEvaluation
 /SimpleCalculator/SimpleCalculator.Wpf/bin/Debug/net6.0-windows
+/SimpleCalculator/SimpleCalculator.Core/.vs
+/SimpleCalculator/SimpleCalculator.Core/obj
