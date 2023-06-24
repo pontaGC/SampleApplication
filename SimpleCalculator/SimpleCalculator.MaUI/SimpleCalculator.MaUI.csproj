@@ -12,7 +12,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>SimpleCalculator.Desktop</ApplicationTitle>
+		<ApplicationTitle>SimpleCalculator.MaUI</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.simplecalculator.desktop</ApplicationId>

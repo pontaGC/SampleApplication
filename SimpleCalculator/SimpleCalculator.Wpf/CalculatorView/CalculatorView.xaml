@@ -1,0 +1,72 @@
+﻿<UserControl x:Class="SimpleCalculator.Wpf.CalculatorView.CalculatorView"
+             x:ClassModifier="internal"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SimpleCalculator.Wpf.CalculatorView"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="400"
+             d:DataContext="{d:DesignInstance local:CalculatorViewModel, IsDesignTimeCreatable=False}">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="CalculatorStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>-->
+        <Grid Grid.Row="0">
+            <TextBlock Style="{StaticResource ExpressionTextBlockStyle}"
+                Text="{Binding CurrentExpression, Mode=OneWay}" />
+        </Grid>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+        <!--Numerical buttons-->
+        <UniformGrid Columns="3">
+            <Button Content="{x:Static local:NumericalStringConstants.Seven}" Command="{Binding SelectNumberCommand, Mode=OneTime}" Style="{StaticResource NumericalButtonSytle}" />
+            <Button Content="{x:Static local:NumericalStringConstants.Eight}" Command="{Binding SelectNumberCommand, Mode=OneTime}" Style="{StaticResource NumericalButtonSytle}" />
+            <Button Content="{x:Static local:NumericalStringConstants.Nine}" Command="{Binding SelectNumberCommand, Mode=OneTime}" Style="{StaticResource NumericalButtonSytle}" />
+            
+            <Button Content="{x:Static local:NumericalStringConstants.Four}" Command="{Binding SelectNumberCommand, Mode=OneTime}" Style="{StaticResource NumericalButtonSytle}" />
+            <Button Content="{x:Static local:NumericalStringConstants.Five}" Command="{Binding SelectNumberCommand, Mode=OneTime}" Style="{StaticResource NumericalButtonSytle}" />
+            <Button Content="{x:Static local:NumericalStringConstants.Six}" Command="{Binding SelectNumberCommand, Mode=OneTime}" Style="{StaticResource NumericalButtonSytle}" />
+
+            <Button Content="{x:Static local:NumericalStringConstants.One}" Command="{Binding SelectNumberCommand, Mode=OneTime}" Style="{StaticResource NumericalButtonSytle}" />
+            <Button Content="{x:Static local:NumericalStringConstants.Two}" Command="{Binding SelectNumberCommand, Mode=OneTime}" Style="{StaticResource NumericalButtonSytle}" />
+            <Button Content="{x:Static local:NumericalStringConstants.Three}" Command="{Binding SelectNumberCommand, Mode=OneTime}" Style="{StaticResource NumericalButtonSytle}" />
+
+            <Button Content="{x:Static local:NumericalStringConstants.Zero}" Command="{Binding SelectNumberCommand, Mode=OneTime}" Style="{StaticResource NumericalButtonSytle}" />
+            <Button Content="{x:Static local:NumericalStringConstants.ZeroZero}" Command="{Binding SelectNumberCommand, Mode=OneTime}" Style="{StaticResource NumericalButtonSytle}" />
+            <Button Content="{x:Static local:NumericalStringConstants.Comma}" Command="{Binding SelectNumberCommand, Mode=OneTime}" Style="{StaticResource NumericalButtonSytle}" />
+        </UniformGrid>
+
+        <UniformGrid Columns="2">
+            <Button Content="{x:Static local:OperatorConstants.LeftRoundBracket}" Style="{StaticResource OperatorButtonStyle}" />
+            <Button Content="{x:Static local:OperatorConstants.RightRoundBracket}" Style="{StaticResource OperatorButtonStyle}" />
+
+            <Button Content="{x:Static local:OperatorConstants.Multiply}" Style="{StaticResource OperatorButtonStyle}"
+                    Command="{Binding SelectBinaryOperatorCommand, Mode=OneTime}" />
+            <Button Content="{x:Static local:OperatorConstants.Divide}" Style="{StaticResource OperatorButtonStyle}"
+                    Command="{Binding SelectBinaryOperatorCommand, Mode=OneTime}" />
+
+            <Button Content="{x:Static local:OperatorConstants.Add}" Style="{StaticResource OperatorButtonStyle}"
+                    Command="{Binding SelectBinaryOperatorCommand, Mode=OneTime}" />
+            <Button Content="{x:Static local:OperatorConstants.Subtract}" Style="{StaticResource OperatorButtonStyle}"
+                    Command="{Binding SelectBinaryOperatorCommand, Mode=OneTime}" />
+
+            <Button Content="{x:Static local:OperatorConstants.ClearSign}" Style="{StaticResource ClearButtonStyle}"
+                    Command="{Binding ResetCommand, Mode=OneTime}" />
+            <Button Content="{x:Static local:OperatorConstants.EqualSign}" Style="{StaticResource EqualButtonStyle}"
+                    Command="{Binding CalculateCommand, Mode=OneTime}" />
+        </UniformGrid>
+        </StackPanel>
+    </Grid>
+</UserControl>

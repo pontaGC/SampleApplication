@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleCalculator.CalculateLogic.Core\SimpleCalculator.CalculateLogic.Core.csproj" />
+    <ProjectReference Include="..\SimpleCalculator.Core\SimpleCalculator.Core.csproj" />
+  </ItemGroup>
+
+</Project>
