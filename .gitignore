@@ -15,3 +15,12 @@
 /SimpleCalculator/SimpleCalculator.Wpf/bin/Debug/net6.0-windows
 /SimpleCalculator/SimpleCalculator.Core/.vs
 /SimpleCalculator/SimpleCalculator.Core/obj
+/SimpleCalculator/CalculateLogicTest/obj
+/SimpleCalculator/SimpleCalculator.CalculateLogic/bin/Debug/net6.0
+/SimpleCalculator/SimpleCalculator.CalculateLogic/obj
+/SimpleCalculator/SimpleCalculator.CalculateLogic.Core/.vs
+/SimpleCalculator/SimpleCalculator.CalculateLogic.Core/bin/Debug/net6.0
+/SimpleCalculator/SimpleCalculator.CalculateLogic.Core/obj
+/SimpleCalculator/SimpleCalculator.Core/bin/Debug/net6.0
+/SimpleCalculator/Tests/CalculateLogicTest/bin/Debug/net6.0
+/SimpleCalculator/Tests/CalculateLogicTest/obj
